@@ -23,7 +23,7 @@ class BasePage():
         alert.send_keys(answer)
         alert.accept()
         try:
-            time.sleep(120)
+            time.sleep(1)
             alert = self.browser.switch_to.alert
             alert_text = alert.text
             print(f"Your code: {alert_text}")
